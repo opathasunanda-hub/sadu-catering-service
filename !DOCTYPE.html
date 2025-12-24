@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadu Catering Service | Elpitiya</title>
+  <style>
+    :root {
+      --primary: #2e7d32;      /* green */
+      --secondary: #f9a825;    /* golden */
+      --dark: #1b1b1b;
+      --light: #f9f9f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      background: var(--light);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #43a047);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--dark);
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1555243896-c709bfa0b564') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .card img {
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #eef6ef;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    button {
+      background: var(--secondary);
+      color: #000;
+      border: none;
+      padding: 12px 26px;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: #ffb300;
+      transform: scale(1.05);
+    }
+
+    iframe {
+      border-radius: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 32px; }
+      nav a { display: inline-block; margin: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sadu Catering Service</h1>
+  <p>Delicious Sri Lankan Catering for Every Occasion</p>
+</header>
+
+<nav>
+  <a href="#home">Home / මුල් පිටුව</a>
+  <a href="#about">About / අප ගැන</a>
+  <a href="#services">Services / සේවා</a>
+  <a href="#gallery">Gallery / ගැලරිය</a>
+  <a href="#contact">Contact / සම්බන්ධ වන්න</a>
+</nav>
+
+<section class="hero" id="home">
+  <h1>Perfect Catering for Your Special Events in Elpitiya</h1>
+  <p>Weddings • Parties • Corporate Events • Family Functions</p>
+  <p>විවාහ • සාද • කාර්යාල උත්සව • පවුල් උත්සව</p>
+  <a href="https://wa.me/94741305337" target="_blank">
+    <button>WhatsApp Order Now</button>
+  </a>
+</section>
+
+<section class="container" id="about">
+  <h2>About Us / අප ගැන</h2>
+  <p>
+    <strong>Sadu Catering Service</strong> is a trusted catering service based in Elpitiya,
+    Sri Lanka. We provide high-quality Sri Lankan meals including rice & curry, noodles,
+    and other lunch and dinner food items for weddings, parties, and special occasions.
+  </p>
+  <p>
+    <strong>සාදු කැටරින් සර්විස්</strong> එල්පිටිය ප්‍රදේශයේ පිහිටි විශ්වාසදායක ආහාර සැපයුම් සේවාවකි.
+    රයිස් & කරි, නූඩ්ල්ස් සහ අනෙකුත් දිවා සහ රාත්‍රී ආහාර අයිතම විවාහ, සාද සහ විශේෂ අවස්ථා සඳහා
+    අප විසින් සපයනු ලබයි.
+  </p>
+</section>
+
+<section class="container" id="services">
+  <h2>Our Food & Services / අපගේ ආහාර සහ සේවා</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Rice & Curry / රයිස් සහ කරි</h3>
+      <p>Fresh Sri Lankan rice & curry meals for lunch and dinner.</p>
+    </div>
+    <div class="card">
+      <h3>Noodles & Fried Rice / නූඩ්ල්ස් සහ ෆ්‍රයිඩ් රයිස්</h3>
+      <p>Perfect for parties, events, and family functions.</p>
+    </div>
+    <div class="card">
+      <h3>Wedding & Party Catering / විවාහ සහ සාද</h3>
+      <p>Customized menus to suit your budget and taste.</p>
+    </div>
+    <div class="card">
+      <h3>Lunch & Dinner Orders / දිවා සහ රාත්‍රී ආහාර</h3>
+      <p>Bulk and individual orders available.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="gallery">
+  <h2>Photo Gallery / ගැලරිය</h2>
+  <div class="services">
+    <div class="card"><img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" width="100%"><p>Rice & Curry</p></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246" width="100%"><p>Noodles</p></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b" width="100%"><p>Lunch Items</p></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" width="100%"><p>Dinner Foods</p></div>
+  </div>
+</section>
+
+<section class="container contact" id="contact">
+  <h2>Contact Us / සම්බන්ධ වන්න</h2>
+  <p><strong>Business:</strong> Sadu Catering Service</p>
+  <p><strong>Location:</strong> Elpitiya, Sri Lanka</p>
+  <p><strong>Phone:</strong> 074 130 5337 | 076 586 5337</p>
+  <p><strong>Email:</strong> opathasunanda@gmail.com</p>
+  <a href="https://wa.me/94741305337" target="_blank"><button>WhatsApp Order</button></a>
+
+  <h3>Find Us on Map</h3>
+  <iframe src="https://www.google.com/maps?q=Elpitiya,Sri Lanka&output=embed" width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 Sadu Catering Service, Elpitiya. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
